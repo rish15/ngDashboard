@@ -1,0 +1,47 @@
+<!-- <h2 mat-dialog-title>Add New User</h2>
+  <mat-dialog-content>
+    <div class="addUserForm">
+      <form>
+        <div class="form-group">
+          <label><strong>User Name</strong></label>
+          <input class="form-control" #name>
+        </div>
+        <div class="form-group">
+            <label><strong>User id</strong></label>
+          <input class="form-control" #id>
+        </div>
+          <div class="form-group">
+            <label><strong>role</strong></label>
+            <select class="form-control" #role>
+              <option value="admin">admin</option>
+              <option value="dealer">dealer</option>
+              <option value="enduser">enduser</option>
+           </select>
+          </div>
+        <br>
+      </form>
+    </div>
+      <button mat-raised-button color="primary" (click)="onCreateUser()">Add</button>
+      <button mat-raised-button color="warn"  mat-dialog-close="true">cancel</button>
+  </mat-dialog-content> -->
+<mat-dialog-content>
+  <h2 mat-dialog-title>Add New User</h2>
+  <div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Name" #name>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="id" #id>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Privilages</mat-label>
+      <select matNativeControl required #role>
+        <option value="Admin">Admin</option>
+        <option value="End User">End User</option>
+        <option value="Dealer">Dealer</option>
+      </select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="onCreateUser()">Add</button>
+
+  </div>
+</mat-dialog-content>

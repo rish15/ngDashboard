@@ -1,0 +1,21 @@
+.container{
+  display:flex;
+}
+.mat-card-header{
+  background-color: lightblue;
+  width:300px;
+  height:150px;
+}
+.mat-card{
+  margin:5px;
+  border: 1px solid lightblue;
+}
+.mat-card-header{
+  padding:20px;
+}
+.container{
+  display: inline-flex;
+}
+h3{
+  font-size: 30px;
+}

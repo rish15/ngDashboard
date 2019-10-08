@@ -1,0 +1,13 @@
+.container{
+  margin:30px;
+}
+
+#addUserButton mat-icon{
+  cursor: pointer;
+  float:right;
+}
+table {
+  width: 50%;
+  margin-left: 300px;
+  border: 1px solid grey;
+}
